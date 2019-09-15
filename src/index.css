@@ -27,6 +27,11 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
+
+.ui.card .content img {
+  width: 100%;
+  margin-bottom: 15px;
+}
 /*
 .main-img {
   display: block;
