@@ -10,6 +10,7 @@ export default function LocationsList() {
         axios.get('https://rickandmortyapi.com/api/location/')
         .then(res => {
             console.log("Location Data", res)
+            setLocation(res.data.results)
         })
         .catch(err => {
             console.log("Location Error", err)
@@ -17,7 +18,7 @@ export default function LocationsList() {
     }, [])
 
     return (
-        <div>
+        <div className="grid-view">
             {Array.from(location).map(loc => {
                 return <LocationCard 
                             key = {loc.id}
