@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import WelcomePage from './WelcomePage';
 import CharacterList from './CharacterList';
 import LocationsList from './LocationsList';
-import EpisodesList from './EpisodesList';
+import EpisodesList from './EpisodeList';
 
 // TODO: Add missing menu/tabs/nav below
 
