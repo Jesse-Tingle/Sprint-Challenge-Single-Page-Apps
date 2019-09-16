@@ -14,21 +14,23 @@ import EpisodesList from './EpisodeList';
 // https://react.semantic-ui.com/elements/button/
 // https://react.semantic-ui.com/collections/breadcrumb/
 
+const Nav = props => <NavLink {...props} />
+
 const panes = [
     {
-        menuItem: <Menu.Item key="Home" >Home Page</Menu.Item>,
+        menuItem: <Menu.Item key="Home" as={Nav} to={`/`}>Home Page</Menu.Item>,
         render: () => <Tab.Pane><WelcomePage /></Tab.Pane>
     },
     {
-        menuItem: <Menu.Item key="Characters" >Characters</Menu.Item>,
+        menuItem: <Menu.Item key="Characters" as={Nav} to={`/characters`}>Characters</Menu.Item>,
         render: () => <Tab.Pane><CharacterList /></Tab.Pane>
     },
     {
-        menuItem: <Menu.Item key="Locations" >Locations</Menu.Item>,
+        menuItem: <Menu.Item key="Locations" as={Nav} to={`/locations`}>Locations</Menu.Item>,
         render: () => <Tab.Pane><LocationsList /></Tab.Pane>
     },
     {
-        menuItem: <Menu.Item key="Episodes" >Episodes</Menu.Item>,
+        menuItem: <Menu.Item key="Episodes" as={Nav} to={`/episodes`}>Episodes</Menu.Item>,
         render: () => <Tab.Pane><EpisodesList /></Tab.Pane>
     }
 ]
