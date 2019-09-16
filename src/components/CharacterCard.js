@@ -1,12 +1,12 @@
 import React from "react";
-import {Card, Icon, Image} from 'semantic-ui-react';
+import {Card, Icon} from 'semantic-ui-react';
 
 
 export default function CharacterCard(props) {
   return(
     <Card> 
       <Card.Content>
-        <img src={props.image} />
+        <img alt="charcter headshots"src={props.image} />
       <Card.Header>{props.name}</Card.Header>
       <Card.Description>
         <p>{props.species} {props.status}</p>

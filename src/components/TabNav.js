@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
+import { Tab, Menu } from "semantic-ui-react";
 import { Route, NavLink } from "react-router-dom";
 import WelcomePage from './WelcomePage';
 import CharacterList from './CharacterList';
