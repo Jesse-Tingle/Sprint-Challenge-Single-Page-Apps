@@ -13,9 +13,12 @@ export default function CharacterCard(props) {
         <p>Location: {props.location}</p>
         <p>Origin: {props.origin}</p>
 
-        <Icon name='user' />
+        
       
       </Card.Description>
+    </Card.Content>
+    <Card.Content>
+      <p><Icon name='user' /> Episodes</p>
     </Card.Content>
   </Card> 
   ); 
