@@ -42,3 +42,20 @@ main {
 header h1 {
   text-align: center;
 }
+
+.location {
+  padding-bottom: 30px;
+}
+
+.residents {
+  display: flex;
+  background-color: lightgrey;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 3px;
+  position: absolute;
+  left: 175px;
+  bottom: -1px;
+} 
